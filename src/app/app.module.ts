@@ -6,20 +6,19 @@ import { AppComponent } from './app.component';
 
 import { provideClientHydration } from '@angular/platform-browser';
 import { NavbarComponent } from './_components/navbar/navbar.component';
+import { BannerComponent } from './_components/banner/banner.component';
+import { ToolsComponent } from './_components/tools/tools.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    BannerComponent,
+    ToolsComponent,
   ],
-  schemas: [
-    CUSTOM_ELEMENTS_SCHEMA
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [provideClientHydration()],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="col text-center">
+            <h2>Algumas ferramentas que utilizo</h2>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-2" *ngFor="let tool of tools">
+            <div class="card">
+                <img loading="lazy" class="img-fluid" [src]="tool.src" />
+            </div>
+        </div>
+    </div>
+</div>
