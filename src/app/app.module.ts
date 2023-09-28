@@ -8,6 +8,8 @@ import { provideClientHydration } from '@angular/platform-browser';
 import { NavbarComponent } from './_components/navbar/navbar.component';
 import { BannerComponent } from './_components/banner/banner.component';
 import { ToolsComponent } from './_components/tools/tools.component';
+import { GoogleTagManagerModule } from 'angular-google-tag-manager';
+import { ProjectsComponent } from './_components/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,7 @@ import { ToolsComponent } from './_components/tools/tools.component';
     NavbarComponent,
     BannerComponent,
     ToolsComponent,
+    ProjectsComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [BrowserModule, AppRoutingModule],
