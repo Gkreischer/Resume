@@ -1,0 +1,17 @@
+svg {
+    position: absolute;
+}
+
+.card.custom {
+    width: 200px;
+
+    @media screen and (max-width: 768px) {
+        width: 350px;
+    }
+ }
+
+.container-fluid {
+    background-image: url('./../../../assets/images/wave-01.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}

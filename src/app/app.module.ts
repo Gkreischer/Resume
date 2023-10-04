@@ -10,6 +10,8 @@ import { BannerComponent } from './_components/banner/banner.component';
 import { ToolsComponent } from './_components/tools/tools.component';
 import { GoogleTagManagerModule } from 'angular-google-tag-manager';
 import { ProjectsComponent } from './_components/projects/projects.component';
+import { ContactComponent } from './_components/contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,9 +20,10 @@ import { ProjectsComponent } from './_components/projects/projects.component';
     BannerComponent,
     ToolsComponent,
     ProjectsComponent,
+    ContactComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
 })

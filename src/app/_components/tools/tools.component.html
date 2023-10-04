@@ -1,14 +1,14 @@
-<div class="container py-5">
+<section id="tools" class="container py-5">
   <div class="row">
     <div class="col text-center">
       <h2>Algumas ferramentas que utilizo</h2>
     </div>
   </div>
   <div class="row justify-content-center">
-    <div class="col-12 col-md-2" *ngFor="let tool of tools">
-      <div class="card">
-        <img loading="lazy" class="img-fluid" [src]="tool.src" />
+    <div class="col-3 col-md-2 mb-3" *ngFor="let tool of tools">
+      <div class="card h-100">
+        <img loading="lazy" class="img-fluid h-100" [src]="tool.src" />
       </div>
     </div>
   </div>
-</div>
+</section>

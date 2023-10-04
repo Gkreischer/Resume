@@ -1,0 +1,85 @@
+<section id="contact" class="container-fluid" data-bs-spy="scroll" data-bs-target="#navbar">
+    <div class="row">
+        <div class="col px-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col px-0">
+                        <div class="container">
+                            <div class="row mt-5">
+                                <div class="col">
+                                    <h3 class="text-light">Precisa de uma hospedagem para seu site? Entre em contato!</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="text-light">Utilizando a Amazon Web Services - Lightsail, tenha um servidor seguro, robusto, escalável e personalizável para suas soluções.</p>
+                                </div>
+                            </div>
+                            <div class="row mt-5 justify-content-center">
+                                <div class="col-12 col-md-3">
+                                    <div class="card h-100 w-100">
+                                        <img src="https://www.itexperts.com.br/wp-content/uploads/2022/05/30115906/AWS-Cloud-1.png" alt="Logo da AWS">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-1 d-flex align-items-center justify-content-center">
+                                    <h3 class="fs-1">+</h3>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <div class="card h-100 w-100">
+                                        <img src="https://avatars.githubusercontent.com/u/53903112?v=4" alt="Logo do Cloudpanel">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-1 d-flex align-items-center justify-content-center">
+                                    <h3 class="fs-1">=</h3>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <div class="card h-100 w-100">
+                                        <img src="assets/images/server_example.png" alt="Logo do Cloudpanel">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-end pt-5">
+                    <div class="col-12 col-md-8">
+                        <h2>Quero ter meu painel <br> com diversas ferramentas</h2>
+                        <p class="text-light">Em poucos passos você poderá ter seu servidor disponível e pronto para uso</p>
+                        <p class="text-light fw-bold mt-md-5">Serviços que ofereço</p>
+                        <ul class="text-light">
+                            <li>Configuração de domínios</li>
+                            <li>Configuração do servidor (AWS Lightsail)</li>
+                            <li>Configuração de painel Wordpress</li>
+                            <li>Suporte</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 w-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Entre em contato</h5>
+                                <form [formGroup]="contactForm" (ngSubmit)="submit()">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Nome</label>
+                                        <input formControlName="name" type="text" class="form-control" id="name" aria-describedby="nameHelp" required="true" minlength="3" maxlength="30">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input formControlName="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" email="true" required="true" minlength="3" maxlength="30">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Mensagem</label>
+                                        <textarea formControlName="message" class="form-control" id="message" rows="3" required="true" minlength="3" maxlength="500"></textarea>
+                                    </div>
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-primary" type="submit" [disabled]="!contactForm.valid">Enviar</button>
+                                      </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
