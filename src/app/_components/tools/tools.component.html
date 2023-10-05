@@ -1,13 +1,24 @@
-<section id="tools" class="container py-5">
+<section id="tools" class="container-fluid">
   <div class="row">
-    <div class="col text-center">
-      <h2>Algumas ferramentas que utilizo</h2>
-    </div>
-  </div>
-  <div class="row justify-content-center">
-    <div class="col-3 col-md-2 mb-3" *ngFor="let tool of tools">
-      <div class="card h-100">
-        <img loading="lazy" class="img-fluid h-100" [src]="tool.src" />
+    <div class="col">
+      <div  class="container py-5">
+        <div class="row">
+          <div class="col">
+            <h2 class="mb-0 fs-1">Algumas ferramentas que utilizo</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <hr class="mt-2"/>
+          </div>
+        </div>
+        <div class="row justify-content-center py-3">
+          <div class="col-3 col-md-2 mb-3" *ngFor="let tool of tools">
+            <div class="card h-100">
+              <img loading="lazy" class="img-fluid h-100" [src]="tool.src" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
