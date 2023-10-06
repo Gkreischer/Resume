@@ -1,4 +1,4 @@
-<section id="experiencia" class="container-fluid py-md-5 py-3">
+<section id="experience" class="container-fluid py-md-5 py-3">
     <div class="row">
         <div class="col">
             <div class="container">
@@ -17,7 +17,7 @@
                         <div class="card">
                             <div class="card-body px-0">
                                 <div class="container-fluid">
-                                    <div class="row text-center py-5">
+                                    <div class="row text-center pt-5 d-none d-md-block">
                                         <div class="col">
                                             <ol class="steplist circle-big">
                                                 <li id="experiencia_1">Reparo e manutenção
@@ -34,13 +34,38 @@
                                             </ol>
                                         </div>
                                     </div>
-                                    <div class="row py-3 align-items-center" *ngIf="">
-                                        <div class="col-md-3 text-center">
+                                    <div class="row text-center pt-5 d-block d-md-none stelist-buttons">
+                                        <div class="col">
+                                            <form>
+                                                <button (click)="getListItemClickedMobile($event)" type="button"
+                                                    class="button btn-primary w-100 mb-3" id="experiencia_1">Reparo e
+                                                    manutenção
+                                                    de<br>computadores</button>
+                                                <button (click)="getListItemClickedMobile($event)" type="button"
+                                                    class="button btn-primary w-100 mb-3" id="experiencia_2">Instalação
+                                                    e
+                                                    configuração
+                                                    de<br>redes de computadores</button>
+                                                <button (click)="getListItemClickedMobile($event)" type="button"
+                                                    class="button btn-primary w-100 mb-3"
+                                                    id="experiencia_3">Configuração
+                                                    de<br>servidores
+                                                    Linux</button>
+                                                <button (click)="getListItemClickedMobile($event)" type="button"
+                                                    class="button btn-primary w-100 mb-3" id="experiencia_4">Programação
+                                                    e
+                                                    desenvolvimento
+                                                    de<br>sistemas Web</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="row py-md-5 align-items-center" *ngIf="showElement == 'experiencia_1'">
+                                        <div class="col-md-3 text-center mb-4">
                                             <img loading="lazy" class="img-fluid rounded"
                                                 src="assets/images/old_pc.jpg" />
                                         </div>
                                         <div class="col">
-                                            <h3 class="fs-5 text-dark">Começando com 11 anos de idade e adquirindo
+                                            <p class="text-dark">Começando com 11 anos de idade e adquirindo
                                                 conhecimentos pelo
                                                 meu padrastro que
                                                 era técnico em Informática, tive a sorte de aprender desde os Pentium
@@ -50,27 +75,111 @@
                                                 desde lá, continuo me aperfeiçoando no que for possível da área de
                                                 tecnologia de
                                                 computadores.
-                                            </h3>
-                                            <h3 class="fs-5 text-dark">Trabalhei desde os 15 anos realizando manutenções
+                                            </p>
+                                            <p class="text-dark">Trabalhei desde os 15 anos realizando manutenções
                                                 de computadores, configuração de pequenas redes, suporte aos clientes.
-                                            </h3>
+                                            </p>
+                                            <p class="fs-3">O que já fiz</p>
+                                            <p>Realizei reparos de microsoldagem, analisei + de 4000
+                                                computadores, criei metodologias de análise de equipamentos utilizando
+                                                ferramentas específicas de análise de estresse, monitoramento de
+                                                voltagens e temperatura, aferição de corrente e voltagem, etc que
+                                                garantiram maior certeza do diagnóstico bem como mais velocidade na
+                                                execução nas empresas que trabalhei</p>
+                                            <p>Montei um computador de R$ 40.000</p>
                                         </div>
                                     </div>
-                                    <div class="row py-3 align-items-center">
+                                    <div class="row py-md-5 align-items-center" *ngIf="showElement == 'experiencia_2'">
                                         <div class="col-12 text-center px-0">
-                                            <img loading="lazy" class="img-fluid rounded"
+                                            <img loading="lazy" class="img-fluid rounded pb-mb-5 py-3"
                                                 src="assets/images/network_cable.png" />
                                         </div>
-                                        <div class="col-12">
-                                            <h3 class="fs-5 text-dark px-3">Começei a me dedicar no conhecimento de
+                                        <div class="col-12 px-md-5">
+                                            <p class="text-dark">Começei a me dedicar no conhecimento de
                                                 redes de
                                                 computadores, onde aprendi sobre redes cabeadas, sem fio, modelo OSI,
                                                 protocolos, roteamento, portas e etc
                                                 e pude colocar em prática realizando instalações de roteadores dos mais
-                                                diversos tipos, configuração de equipamentos de rede, realizando o
+                                                diversos tipos, realizando configurações, construindo o
                                                 cabeamento de rede, atividades comuns de quem trabalha com a área
-                                                técnica
-                                            </h3>
+                                                técnica.
+                                            </p>
+                                            <p class="fs-3">O que já fiz</p>
+                                            <p>Configurei roteadores residencias/empresariais</p>
+                                            <p>Defini políticas de segurança para conformidade com CID</p>
+                                            <p>Trabalhei com equipamentos <a
+                                                    href="https://br.store.ui.com/">Ubiquiti</a> e <a
+                                                    href="https://mikrotik.com/">Microtik</a></p>
+                                            <p>Crimpei muito cabo de rede, montei sala de servidor utilizando racks e
+                                                cabeamento estruturado</p>
+                                        </div>
+                                    </div>
+                                    <div class="row py-md-5 align-items-center" *ngIf="showElement == 'experiencia_3'">
+                                        <div class="col-12 text-center px-0">
+                                            <img loading="lazy" class="img-fluid rounded pb-5"
+                                                src="assets/images/linux.jpeg" />
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="text-dark">Com os conhecimentos adquiridos de redes,
+                                                fui me dedicar a área de servidores e encontrei minha paixão: Linux.
+                                                Aprendi sobre as diversos distros existentes no mercado, configurei
+                                                diversos serviços, desde Web, Firewall, NAS, Proxys. Em todos os locais
+                                                que trabalhei, melhorei a infraestrutura utilizando tecnologias de
+                                                código aberto e livre, com o objetivo de reduzir os custos e otimizar os
+                                                processos do negócio.
+                                            </p>
+                                            <p class="fs-3">O que já fiz</p>
+                                            <p>Migrei a infraestrutura de uma indústria de abates de aves para Linux
+                                                utilizando <a href="https://www.openmediavault.org/">OpenMediaVault</a>,
+                                                utilizei virtualização com o <a
+                                                    href="https://www.proxmox.com/en/">Proxmox</a> para os
+                                                sistemas, por exemplo, o <a
+                                                    href="https://www.univention.com/products/ucs/">Univention Corporate
+                                                    Server</a> para controle de ACLs no Active Directory</p>
+                                            <p>Migrei o servidor com <a href="https://firebirdsql.org/">Firebird</a> e
+                                                um sistema <a
+                                                    href="https://www.embarcadero.com/br/products/delphi">Delphi</a>,
+                                                além de <a href="https://www.microsoft.com/pt-br/sql-server">SQL
+                                                    Server</a> e
+                                                os arquivos da empresa para o OpenMediaVault, integrado com o <a
+                                                    href="https://www.docker.com/">Docker</a>
+                                                onde projetei e coloquei em funcionamento contêineres customizados com o
+                                                <a href="https://firebirdsql.org/">Firebird</a> e <a
+                                                    href="https://www.microsoft.com/pt-br/sql-server">SQL Server</a>,
+                                                realizando a migração dos dados existentes, além
+                                                de configurar políticas de acesso e gerenciamento dos arquivos da
+                                                empresa, separando em camadas de acesso.
+                                            </p>
+                                            <p>Configurei e transformei em produto uma solução utilizando <a
+                                                    href="https://www.pfsense.org/" target="_blank">PFSense</a> para
+                                                acesso remoto via VPN com <a href="https://openvpn.net/">OpenVPN</a>,
+                                                monitoramento contínuo da rede dos clientes através de acesso externo
+                                                via DNS dinâmico e controle dos acessos através do uso do <a
+                                                    href="http://www.squid-cache.org/">SQUID</a>, além de outras
+                                                soluções.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row py-5 align-items-center" *ngIf="showElement == 'experiencia_4'">
+                                        <div class="col-12 text-center px-0">
+                                            <img loading="lazy" class="img-fluid rounded pb-5"
+                                                src="assets/images/programmer.png" />
+                                        </div>
+                                        <div class="col-12 px-md-5">
+                                            <p class="text-dark">Naturalmente, fui adquirindo conhecimento de
+                                                programação e foquei na área de desenvolvimento de sistemas, quando
+                                                realizei minhas primeiras certificações utilizando o <a
+                                                    href="https://www.coursera.org/">Coursera</a> e adquirindo bolsas de
+                                                estudo, fiz minha primeira especialização em Full Stack com <a
+                                                    href="https://angular.io/">Angular</a>, <a
+                                                    href="https://www.mongodb.com/pt-br">MongoDB</a>, <a
+                                                    href="https://nodejs.org/en">Nodejs</a>, entre outras tecnologias
+                                                que continuo me aperfeiçoando e me fascinando.
+                                            </p>
+                                            <p class="fs-3">O que já fiz</p>
+                                            <p>Além dos sistemas acima, já vendi uma solução de ecommerce baseada no <a
+                                                    href="https://prestashop.com/">Prestashop</a></p>
+                                            <p>Desenvolvi um sistema para ser utilizado pelo vereador para cadastro de
+                                                pessoas com deficiência</p>
                                         </div>
                                     </div>
                                 </div>

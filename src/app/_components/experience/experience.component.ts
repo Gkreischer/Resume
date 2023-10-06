@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceComponent implements OnInit {
 
-  showElement: boolean = false;
+  showElement: string = 'experiencia_1';
 
   ngOnInit(): void {
     this.getListItemClicked();
@@ -21,13 +21,13 @@ export class ExperienceComponent implements OnInit {
 
       steplist.addEventListener('click', (event: Event) => {
         const target = event?.target as Element;
-        console.log(target)
         if (!(target instanceof HTMLLIElement)) return;
         const items = target.closest('.steplist')?.querySelectorAll('li');
         if (!items) return;
         items.forEach((item: Element) => {
           if (item === target) {
             item.classList.add('active');
+            this.showElement = item.id;
           } else {
             item.classList.remove('active');
           }
@@ -35,6 +35,13 @@ export class ExperienceComponent implements OnInit {
       });
     });
 
+  }
+
+  getListItemClickedMobile(event: Event) {
+    const targetElement = event.target as Element;
+    const id = targetElement.id;
+
+    this.showElement = id;
   }
 
 }
