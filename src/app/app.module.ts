@@ -12,6 +12,7 @@ import { GoogleTagManagerModule } from 'angular-google-tag-manager';
 import { ProjectsComponent } from './_components/projects/projects.component';
 import { ContactComponent } from './_components/contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ExperienceComponent } from './_components/experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     BannerComponent,
     ToolsComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    ExperienceComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
