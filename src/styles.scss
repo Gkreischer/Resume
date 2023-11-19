@@ -9,7 +9,7 @@
 
 html,
 body {
-    background-color: #041C32;
+    background-color: rgb(3, 17, 31);
     font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -29,6 +29,38 @@ h6 {
 hr {
     border: none;
     height: 12px;
-    background: rgb(0,0,0, 0.9);
+    background: rgba(255, 255, 255, 0.795);
     border-radius: 20px;
+}
+
+h1 {
+    font-size: 2.082rem;
+}
+
+h2 {
+    font-size: 1.842rem;
+}
+
+h3 {
+    font-size: 1.63rem;
+}
+
+h4 {
+    font-size: 1.443rem;
+}
+
+h5 {
+    font-size: 1.277rem
+}
+
+h6 {
+    font-size: 1.13rem
+}
+
+p { 
+    font-size: 1rem;
+}
+
+small {
+    font-size: 0.885rem;
 }

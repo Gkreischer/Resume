@@ -1,4 +1,4 @@
-<section id="contact" class="container-fluid mt-5" data-bs-spy="scroll" data-bs-target="#navbar">
+<section id="contact" class="container-fluid" data-bs-spy="scroll" data-bs-target="#navbar">
     <div class="row">
         <div class="col">
             <div class="container">
@@ -35,42 +35,36 @@
                         </div>
                     </div>
                 </div>
-                <div class="row pt-5">
+                <div class="row pt-5 justify-content-center">
                     <div class="col-12 col-md-6">
                         <h2 class="mb-0 fs-1">Quero ter meu painel <br> com diversas ferramentas</h2>
                         <p class="text-light">Em poucos passos você poderá ter seu servidor disponível e pronto para uso</p>
-                        <p class="text-light fw-bold mt-md-5 mb-2 fs-3">Serviços que ofereço</p>
+                        <p class="text-light fw-bold mt-md-5 mb-2 fs-3">Serviços que ofereço (além dos de desenvolvimento):</p>
                         <ul class="text-light fs-5">
                             <li>Configuração de domínios</li>
                             <li>Configuração do servidor (AWS Lightsail)</li>
                             <li>Configuração de painel Wordpress</li>
+                            <li>Certificados</li>
                             <li>Suporte</li>
                             <li>Desenvolvimento de sites</li>
                             <li>Migrações</li>
                             <li>Incremento de segurança</li>
                         </ul>
                     </div>
-                    <div class="col-12 col-md-4 mt-3">
-                        <div class="card h-100 w-100">
+                    <div class="col-12 col-md-6 col-lg-4 mt-3">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="text-center text-dark">Entre em contato</h3>
+                            </div>
                             <div class="card-body">
-                                <h5 class="card-title">Entre em contato</h5>
-                                <form [formGroup]="contactForm" (ngSubmit)="submit()">
-                                    <div class="mb-3">
-                                        <label for="name" class="form-label">Nome</label>
-                                        <input formControlName="name" type="text" class="form-control" id="name" aria-describedby="nameHelp" required="true" minlength="3" maxlength="30">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="email" class="form-label">Email</label>
-                                        <input formControlName="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" email="true" required="true" minlength="3" maxlength="30">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="message" class="form-label">Mensagem</label>
-                                        <textarea formControlName="message" class="form-control" id="message" rows="3" required="true" minlength="3" maxlength="500"></textarea>
-                                    </div>
-                                    <div class="d-grid gap-2">
-                                        <button class="btn btn-primary" type="submit" [disabled]="!contactForm.valid">Enviar</button>
-                                      </div>
-                                </form>
+                                
+                                <p class="text-center">
+                                    <a href="
+                                    https://wa.link/ld6zdv">
+                                    https://wa.link/ld6zdv
+                                </a>
+                                </p>
+                                <img class="img-fluid" loading="lazy" src="assets/images/qrcode.png" alt="QRCode do link para falar com Gustavo Kreischer de Almeida">
                             </div>
                         </div>
                     </div>
