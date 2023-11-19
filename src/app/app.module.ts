@@ -13,7 +13,10 @@ import { ProjectsComponent } from './_components/projects/projects.component';
 import { ContactComponent } from './_components/contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ExperienceComponent } from './_components/experience/experience.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { ChunkPipe } from './_pipes/chunk-pipe.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,11 +25,15 @@ import { ExperienceComponent } from './_components/experience/experience.compone
     ToolsComponent,
     ProjectsComponent,
     ContactComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    ChunkPipe
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
-  providers: [provideClientHydration()],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, BrowserAnimationsModule, CollapseModule.forRoot(), CarouselModule.forRoot()],
+  providers: [],
   bootstrap: [AppComponent],
+  exports: [
+    ChunkPipe
+  ]
 })
 export class AppModule {}
