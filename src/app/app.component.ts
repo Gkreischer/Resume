@@ -6,17 +6,7 @@ import * as bootstrap from 'bootstrap';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements AfterViewInit {
+export class AppComponent {
   title = 'gkresume';
 
-  ngAfterViewInit() {
-    // Ative o Scroll Spy após o carregamento da página
-    this.activateScrollSpy();
-  }
-
-  activateScrollSpy() {
-    const scrollSpy = new bootstrap.ScrollSpy(document.body, {
-      target: '#navbar', // O ID do elemento de navegação
-    });
-  }
 }

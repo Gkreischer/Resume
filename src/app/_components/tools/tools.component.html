@@ -18,7 +18,9 @@
               <slide *ngFor="let toolGroup of tools | chunk: 3">
                 <div class="card-group">
                   <div *ngFor="let tool of toolGroup" class="card mx-1 rounded">
-                    <img loading="lazy" class="img-fluid rounded" [src]="tool.src" style="display: block; width: 100%;"/>
+                    <a [href]="tool.link">
+                      <img loading="lazy" class="img-fluid rounded d-block w-100" [src]="tool.src" [alt]="tool.name"/>
+                    </a>
                   </div>
                 </div>
               </slide>
