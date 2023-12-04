@@ -1,41 +1,11 @@
-.container-fluid {
-    // background-image: url('./../../../assets/images/background-banner.jpg');
-    background-color: linear-gradient('red, yellow');
-    background-repeat: round;
-    -webkit-animation: slidein 100s;
-    animation: slidein 100s;
-
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-}
-
-@-webkit-keyframes slidein {
-    from {
-        background-position: top;
-        background-size: 3000px;
-    }
-
-    to {
-        background-position: -100px 0px;
-        background-size: 2750px;
-    }
-}
-
-@keyframes slidein {
-    from {
-        background-position: top;
-        background-size: 3000px;
-    }
-
-    to {
-        background-position: -100px 0px;
-        background-size: 2750px;
-    }
-
+#banner {
+  background-image: repeating-linear-gradient(
+    45deg,
+    #072546 0,
+    #072546 1px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 50px 50px;
+  background-color: #03111f;
 }
