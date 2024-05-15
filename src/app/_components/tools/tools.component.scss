@@ -1,3 +1,15 @@
 ::ng-deep .carousel-control {
     display: none;
   }
+
+  .effect-expand {
+    transition: transform 0.5s ease-in-out; /* Adicionando uma transição para suavizar a animação */
+  }
+  
+  .effect-expand:hover {
+    transform: scale(1.2); /* Expande a imagem quando o mouse está sobre ela */
+  }
+  
+section {
+  background-color: white;
+}

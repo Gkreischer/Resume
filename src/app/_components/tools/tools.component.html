@@ -4,7 +4,7 @@
       <div  class="container py-5">
         <div class="row">
           <div class="col text-center">
-            <h2 class="mb-0 fs-1">Algumas ferramentas que utilizo</h2>
+            <h2 class="mb-0 fs-1 text-dark">Algumas ferramentas que utilizo</h2>
           </div>
         </div>
         <div class="row">
@@ -13,7 +13,8 @@
           </div>
         </div>
         <div class="row justify-content-center py-3">
-          <div class="col">
+          <!-- 
+            <div class="col">
             <carousel [interval]="2000" [showIndicators]="false" [isAnimated]="true" >
               <slide *ngFor="let toolGroup of tools | chunk: 3">
                 <div class="card-group">
@@ -25,6 +26,10 @@
                 </div>
               </slide>
             </carousel>
+          </div>
+          -->
+          <div class="col-12 col-md-3" *ngFor="let tool of tools">
+            <img class="img-fluid rounded-circle h-100 w-100 p-3 effect-expand" [src]="tool.src" [alt]="tool.name"/>
           </div>
         </div>
       </div>

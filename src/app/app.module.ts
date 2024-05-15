@@ -17,7 +17,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ChunkPipe } from './_pipes/chunk-pipe.pipe';
-import { StickyNavbarComponent } from './_components/sticky-navbar/sticky-navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +26,6 @@ import { StickyNavbarComponent } from './_components/sticky-navbar/sticky-navbar
     ProjectsComponent,
     ContactComponent,
     ExperienceComponent,
-    StickyNavbarComponent,
     ChunkPipe,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

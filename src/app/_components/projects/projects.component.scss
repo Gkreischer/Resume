@@ -6,3 +6,12 @@ a {
 h3 {
     color: black !important;
 }
+
+.card {
+    .card-body {
+        p {
+            white-space: pre-wrap;
+    word-break: keep-all;
+        }
+    }
+}
