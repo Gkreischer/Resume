@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { WhatsappService } from 'src/app/_services/whatsapp.service';
 
 @Component({
   selector: 'app-contact',
@@ -10,7 +11,8 @@ export class ContactComponent implements OnInit {
 
     contactForm!: FormGroup;
     constructor(
-      private fb: FormBuilder
+      private fb: FormBuilder,
+      private whatsappService: WhatsappService
     ) {
     }
 
@@ -21,15 +23,15 @@ export class ContactComponent implements OnInit {
     mountForm() {
       
       this.contactForm = this.fb.group({
-        name: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(30)]],
-        email: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(30), Validators.email]],
+        name: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(50)]],
+        email: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(50), Validators.email]],
         message: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(500)]]
       });
     
     }
 
     submit() {
-      console.log(this.contactForm.value);
+      this.whatsappService.sendMessage(this.contactForm);
     }
 
 } 

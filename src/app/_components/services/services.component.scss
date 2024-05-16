@@ -5,3 +5,9 @@
 #sites {
     background-color: #07294b;
 }
+
+section {
+    @media (width > 1200px) {
+        padding: 5rem !important;
+    }
+}

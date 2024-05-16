@@ -8,7 +8,6 @@ import { provideClientHydration } from '@angular/platform-browser';
 import { NavbarComponent } from './_components/navbar/navbar.component';
 import { BannerComponent } from './_components/banner/banner.component';
 import { ToolsComponent } from './_components/tools/tools.component';
-import { GoogleTagManagerModule } from 'angular-google-tag-manager';
 import { ProjectsComponent } from './_components/projects/projects.component';
 import { ContactComponent } from './_components/contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';

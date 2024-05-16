@@ -12,4 +12,7 @@ svg {
 
  section {
     background-color : white;
+    @media (width > 1200px) {
+        padding: 5rem !important;
+    }
  }
