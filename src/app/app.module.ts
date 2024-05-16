@@ -17,6 +17,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ChunkPipe } from './_pipes/chunk-pipe.pipe';
+import { ParallaxDirective } from './_directives/parallax.directive';
+import { ServicesComponent } from './_components/services/services.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +29,8 @@ import { ChunkPipe } from './_pipes/chunk-pipe.pipe';
     ContactComponent,
     ExperienceComponent,
     ChunkPipe,
+    ParallaxDirective,
+    ServicesComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, BrowserAnimationsModule, CollapseModule.forRoot(), CarouselModule.forRoot()],

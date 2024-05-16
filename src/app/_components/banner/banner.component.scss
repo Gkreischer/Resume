@@ -8,5 +8,18 @@
   );
   background-size: 50px 50px;
   background-color: #03111f;
-  height: 100vh;
+  @media screen and (min-width: 1200px) {
+    height: 80vh;
+  }
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
