@@ -6,5 +6,4 @@ export default async (cb) => {
   .pipe(imagemin({verbose: true}))
   .pipe(dest('src/assets/compressed2'));
 
-  cb();
 }
