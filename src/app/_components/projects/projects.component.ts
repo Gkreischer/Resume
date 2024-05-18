@@ -13,7 +13,7 @@ export class ProjectsComponent {
       description: 'Aplicativo para compartilhamento de presentes, listas e eventos, conectando empresas e usuários. Também disponível no Google Play Store para Android.',
       technologies: 'Ionic (Angular), AWS, MariaDB, CloudPanel',
       url: 'https://joylist.com',
-      image: 'assets/images/joylist.png'
+      image: 'assets/images/joylist.jpg'
     },
     {
       name: 'Atlas de Patologia Oral',
