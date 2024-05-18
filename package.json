@@ -10,7 +10,6 @@
     "test": "ng test",
     "dev:ssr": "ng run gkresume:serve-ssr",
     "serve:ssr": "node dist/gkresume/server/main.js",
-    "prebuild": "gulp compress",
     "build:ssr": "ng build && ng run gkresume:server",
     "prerender": "ng run gkresume:prerender"
   },
