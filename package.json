@@ -1,7 +1,6 @@
 {
   "name": "gkresume",
   "version": "0.95",
-  "type": "module",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
