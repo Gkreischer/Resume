@@ -15,7 +15,7 @@ export class ToolsComponent {
     {
       name: 'Ionic',
       link: 'https://ionicframework.com/',
-      src: '/assets/images/logo_ionic.png',
+      src: '/assets/images/ionic.png',
     },
     {
       name: 'PHP',
