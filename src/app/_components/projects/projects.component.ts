@@ -12,7 +12,7 @@ export class ProjectsComponent {
       name: 'Joylist',
       description: 'Aplicativo para compartilhamento de presentes, listas e eventos, conectando empresas e usuários. Também disponível no Google Play Store para Android.',
       technologies: 'Ionic (Angular), AWS, MariaDB, CloudPanel',
-      url: 'https://joylist.com',
+      url: 'https://joylist.com.br',
       image: 'assets/images/joylist.jpg'
     },
     {
@@ -33,7 +33,7 @@ export class ProjectsComponent {
       name: 'AppMarket',
       description: 'Exemplo de um app em Ionic para uma loja de produtos consumindo API',
       technologies: 'Ionic (Angular), GitHub Pages',
-      url: 'https://github.com/gkreischer/AppMarket',
+      url: 'https://gkreischer.github.io/AppMarket/',
       image: 'assets/images/ionic.png'
     },
     {
